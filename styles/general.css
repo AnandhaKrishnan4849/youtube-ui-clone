@@ -125,6 +125,47 @@ a{
   .video-stats {
     font-size: 11px;
   }
+
+  @media (max-width: 600px) {
+
+  /* ...keep other rules in this block... */
+
+  .hamburger-icon {
+    height: 20px;
+    margin-left: 10px;   /* small margin from screen edge */
+    margin-right: 18px;  /* MORE space between hamburger and logo */
+  }
+
+  .youtube-logo-icon {
+    height: 18px;
+  }
+
+  .middle-section {
+    margin-left: 6px;
+    margin-right: 6px;
+    max-width: none;
+  }
+
+  .search-box {
+    height: 32px;
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  .search-icon-button {
+    height: 34px;
+    width: 56px;   /* ⬅️ make the search button wider */
+    margin-right: 6px;
+  }
+
+  .search-icon {
+    height: 18px;
+  }
+
+  /* ...rest of your mobile rules... */
+
+}
+
 }
 
 
