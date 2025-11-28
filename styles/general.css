@@ -15,10 +15,8 @@ a{
     text-decoration: none;
 }
 
-/* ========== FINAL MOBILE FIX ========== */
 @media (max-width: 600px) {
 
-  /* Remove sidebar space */
   .body {
     margin-left: 0;
     margin-right: 0;
@@ -26,12 +24,10 @@ a{
     padding-bottom: 20px;
   }
 
-  /* Hide sidebar completely */
   .sidebar {
     display: none;
   }
 
-  /* Header compact like real YouTube mobile */
   .header {
     height: 50px;
     padding: 0 6px;
@@ -44,7 +40,7 @@ a{
   .hamburger-icon {
     height: 20px;
     margin-left: 8px;
-    margin-right: 12px;   /* ✅ pushes logo closer to center */
+    margin-right: 12px;
   }
 
   .youtube-logo-icon {
@@ -64,10 +60,9 @@ a{
     padding-left: 8px;
   }
 
-  /* ✅ FIX: Search button is now wider */
   .search-icon-button {
-    height: 34px;
-    width: 60px;   /* wider like real YouTube */
+    height: 35px;
+    width: 60px; 
     margin-right: 6px;
   }
 
@@ -81,33 +76,13 @@ a{
     height: 18px;
   }
 
-  .right-section {
-    width: auto;
-    gap: 8px;
-    margin-right: 6px;
-  }
-
-  .upload-icon,
-  .youtube-apps-icon,
-  .notification-icon {
-    height: 20px;
-  }
-
-  .yt-user {
-    height: 26px;
-    border-radius: 13px;
-    margin-right: 2px;
-  }
-
-  /* ✅ Hide upload + apps like real YouTube mobile */
   .upload-icon-container,
   .youtube-apps-icon-container {
     display: none;
   }
 
-  /* ✅ FIX: FORCE 1 COLUMN ON MOBILE */
   .grid-view {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
     row-gap: 24px;
     padding: 8px;
   }

@@ -194,7 +194,7 @@
     cursor: pointer;
 }
 
-/* ===== MOBILE HEADER FIX (phones only) ===== */
+
 @media (max-width: 600px) {
 
   .header {
@@ -209,7 +209,7 @@
   .hamburger-icon {
     height: 20px;
     margin-left: 8px;
-    margin-right: 12px;   /* more gap before logo */
+    margin-right: 12px;
   }
 
   .youtube-logo-icon {
@@ -223,16 +223,14 @@
     max-width: none;
   }
 
-  /* ✅ Make the search input usable width on mobile */
   .search-box {
     height: 32px;
     font-size: 13px;
     padding-left: 8px;
     flex: 1;
-    width: auto;          /* override width: 0 from desktop */
+    width: auto;
   }
 
-  /* ✅ Make search button a bit wider */
   .search-icon-button {
     height: 34px;
     width: 60px;
@@ -247,29 +245,5 @@
   .search-icon,
   .voice-search-icon {
     height: 18px;
-  }
-
-  .right-section {
-    width: auto;
-    gap: 8px;
-    margin-right: 6px;
-  }
-
-  .upload-icon,
-  .youtube-apps-icon,
-  .notification-icon {
-    height: 20px;
-  }
-
-  .yt-user {
-    height: 26px;
-    border-radius: 13px;
-    margin-right: 2px;
-  }
-
-  /* Optional: hide upload + apps on mobile like YouTube */
-  .upload-icon-container,
-  .youtube-apps-icon-container {
-    display: none;
   }
 }
