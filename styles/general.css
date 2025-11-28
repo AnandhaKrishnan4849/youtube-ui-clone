@@ -14,3 +14,119 @@ p{
 a{
     text-decoration: none;
 }
+
+/* ========== MOBILE VIEW (PHONES ONLY) ========== */
+@media (max-width: 600px) {
+
+  /* Remove sidebar space */
+  .body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  /* Hide sidebar on phone */
+  .sidebar {
+    display: none;
+  }
+
+  /* Header more compact like YouTube mobile */
+  .header {
+    height: 50px;
+    padding: 0 8px;
+  }
+
+  .left-section {
+    width: auto;
+  }
+
+  .hamburger-icon {
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 10px;
+  }
+
+  .youtube-logo-icon {
+    height: 18px;
+  }
+
+  .middle-section {
+    margin-left: 6px;
+    margin-right: 6px;
+    max-width: none;
+  }
+
+  .search-box {
+    height: 32px;
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  .search-icon-button {
+    height: 34px;
+    width: 44px;
+    margin-right: 6px;
+  }
+
+  .voice-search-icon-button {
+    height: 34px;
+    width: 34px;
+  }
+
+  .search-icon,
+  .voice-search-icon {
+    height: 18px;
+  }
+
+  .right-section {
+    width: auto;
+    gap: 10px;
+    margin-right: 8px;
+  }
+
+  .upload-icon,
+  .youtube-apps-icon,
+  .notification-icon {
+    height: 20px;
+  }
+
+  .yt-user {
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 4px;
+  }
+
+  /* If you want it even closer to mobile YouTube (optional):
+     hide upload + apps, keep bell + profile only */
+  .upload-icon-container,
+  .youtube-apps-icon-container {
+    display: none;
+  }
+
+  /* Video grid: 1 per row on phone */
+  .grid-view {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    padding: 8px;
+  }
+
+  .thumbnails {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-heading {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 11px;
+  }
+}
+
+
+
+
