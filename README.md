@@ -10,4 +10,4 @@ A static YouTube homepage UI clone built using pure HTML and CSS.
 
 ## How to Run
 - Download or clone the repo
-- Open `youtube.html` in a browser
+- Open `index.html` in a browser
