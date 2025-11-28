@@ -15,26 +15,26 @@ a{
     text-decoration: none;
 }
 
-/* ========== MOBILE VIEW (PHONES ONLY) ========== */
+/* ========== FINAL MOBILE FIX ========== */
 @media (max-width: 600px) {
 
   /* Remove sidebar space */
   .body {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 60px;
+    margin-top: 55px;
     padding-bottom: 20px;
   }
 
-  /* Hide sidebar on phone */
+  /* Hide sidebar completely */
   .sidebar {
     display: none;
   }
 
-  /* Header more compact like YouTube mobile */
+  /* Header compact like real YouTube mobile */
   .header {
     height: 50px;
-    padding: 0 8px;
+    padding: 0 6px;
   }
 
   .left-section {
@@ -44,7 +44,7 @@ a{
   .hamburger-icon {
     height: 20px;
     margin-left: 8px;
-    margin-right: 10px;
+    margin-right: 12px;   /* ✅ pushes logo closer to center */
   }
 
   .youtube-logo-icon {
@@ -52,8 +52,9 @@ a{
   }
 
   .middle-section {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
+    flex: 1;
     max-width: none;
   }
 
@@ -63,9 +64,10 @@ a{
     padding-left: 8px;
   }
 
+  /* ✅ FIX: Search button is now wider */
   .search-icon-button {
     height: 34px;
-    width: 44px;
+    width: 60px;   /* wider like real YouTube */
     margin-right: 6px;
   }
 
@@ -81,8 +83,8 @@ a{
 
   .right-section {
     width: auto;
-    gap: 10px;
-    margin-right: 8px;
+    gap: 8px;
+    margin-right: 6px;
   }
 
   .upload-icon,
@@ -94,19 +96,18 @@ a{
   .yt-user {
     height: 26px;
     border-radius: 13px;
-    margin-right: 4px;
+    margin-right: 2px;
   }
 
-  /* If you want it even closer to mobile YouTube (optional):
-     hide upload + apps, keep bell + profile only */
+  /* ✅ Hide upload + apps like real YouTube mobile */
   .upload-icon-container,
   .youtube-apps-icon-container {
     display: none;
   }
 
-  /* Video grid: 1 per row on phone */
+  /* ✅ FIX: FORCE 1 COLUMN ON MOBILE */
   .grid-view {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     row-gap: 24px;
     padding: 8px;
   }
@@ -125,49 +126,6 @@ a{
   .video-stats {
     font-size: 11px;
   }
-
-  @media (max-width: 600px) {
-
-  /* ...keep other rules in this block... */
-
-  .hamburger-icon {
-    height: 20px;
-    margin-left: 10px;   /* small margin from screen edge */
-    margin-right: 18px;  /* MORE space between hamburger and logo */
-  }
-
-  .youtube-logo-icon {
-    height: 18px;
-  }
-
-  .middle-section {
-    margin-left: 6px;
-    margin-right: 6px;
-    max-width: none;
-  }
-
-  .search-box {
-    height: 32px;
-    font-size: 13px;
-    padding-left: 8px;
-  }
-
-  .search-icon-button {
-    height: 34px;
-    width: 56px;   /* ⬅️ make the search button wider */
-    margin-right: 6px;
-  }
-
-  .search-icon {
-    height: 18px;
-  }
-
-  /* ...rest of your mobile rules... */
-
 }
-
-}
-
-
 
 
